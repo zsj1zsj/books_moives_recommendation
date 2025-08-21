@@ -1,0 +1,2 @@
+requests~=2.32.5
+zlibrary~=1.0.2
