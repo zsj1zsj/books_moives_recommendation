@@ -1,11 +1,13 @@
 import zlibrary
 import asyncio
-
+import os
+from dotenv import load_dotenv
 
 async def main():
     lib = zlibrary.AsyncZlib()
-    email = ""
-    password = ""
+    load_dotenv()
+    email = os.getenv("zlib_user")
+    password = os.getenv("zlib_password")
     # zlibrary requires a singlelogin account in order to access the website
     await lib.login(email, password)
 
