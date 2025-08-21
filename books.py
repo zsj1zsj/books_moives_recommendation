@@ -4,8 +4,8 @@ import asyncio
 
 async def main():
     lib = zlibrary.AsyncZlib()
-    email = "zsj1zsj@gmail.com"
-    password = "imzsj1zsj"
+    email = ""
+    password = ""
     # zlibrary requires a singlelogin account in order to access the website
     await lib.login(email, password)
 
